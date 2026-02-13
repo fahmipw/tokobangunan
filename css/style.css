@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+#sidebar-container {
+  width: 260px;
+}
+main#main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #f9f9f9;
+}
+/* Tambahkan style sidebar di sini atau import file khusus */
+.sidebar {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 15px;
+}
+/* + style menu, submenu, link aktif, dll */
+.menu-wrapper { flex-grow: 1; overflow-y: auto; }
+/* dan seterusnya sesuai style kamu */

@@ -1,0 +1,178 @@
+/* Reset dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    background-color: #304359;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 40px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li strong {
+    color: #a0b0bb;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding-left: 10px;
+}
+
+.sidebar ul li a {
+    color: #b0b9c3;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 10px;
+    display: block;
+    border-radius: 5px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+    background-color: #2381c4;
+    color: white;
+}
+
+.logout-btn {
+    display: block;
+    margin-top: 50px;
+    background-color: #b93636;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #d04f4f;
+}
+
+/* Konten utama */
+.main-content {
+    margin-left: 260px;
+    padding: 30px 40px;
+    min-height: 100vh;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 14px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2381c4;
+    color: white;
+    font-weight: 600;
+}
+
+/* Tombol aksi */
+.btn-edit, .btn-delete {
+    padding: 6px 14px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    margin-right: 8px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit {
+    background-color: #4caf50;
+}
+
+.btn-edit:hover {
+    background-color: #45a049;
+}
+
+.btn-delete {
+    background-color: #f44336;
+}
+
+.btn-delete:hover {
+    background-color: #da190b;
+}
+
+/* Area tombol tambah dan kembali */
+.actions {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.actions a {
+    font-weight: 600;
+    color: #2381c4;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 2px solid #2381c4;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.actions a:hover {
+    background-color: #2381c4;
+    color: white;
+}
+
+/* Notifikasi */
+.notif {
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.notif.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.notif.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}

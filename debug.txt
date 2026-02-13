@@ -1,0 +1,5 @@
+Array
+(
+    [nama] => Batu
+    [harga] => 300000
+)
